@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+}
+
+P{
+    visibility: hidden;
+    height: 0;
+    margin: 10px 10px 0;
+    padding: 0;
+    color: red;
+}
+
+.converter-container {
+    width: 640px;
+    height: 200px;
+    margin: auto;
+    border: solid black;
+    border-radius: 5px;
+    background-color: #f9f7e8;
+}
+
+.center {
+    width: 90%;
+    margin: auto;
+    padding: 25px 0px;
+    align-items: center;
+}
+
+#inputField {
+    width: 320px;
+    height: 48px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #61bfad;
+    border: solid 1px darkturquoise;
+}
+
+#convert-btn {
+    width: 200px;
+    height: 48px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #a6cef2; 
+}
+
+#outputField {
+    width: 320px;
+    height: 48px;
+    background-color: #c0c2ce;
+    margin: 10px;
+    border: solid 1px darkgray
+}
