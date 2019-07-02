@@ -36,17 +36,22 @@ function convertBin2Dec(binaryToConvert) {
     reverseLength(binaryToConvert)
     let result = 0
     for (let index = 0; index < binaryToConvert.length; index++) {
-        base = 2
         exponent = reverseNumber[index]
-        result += binaryToConvert[index] * (base**exponent)     
-    } 
+        result += parseInt(binaryToConvert[index]) * Math.pow(2, exponent)
+    }
+
+    /* result from youtube
+    for (let index = binaryLength.length-1; index >= 0; index--) { 
+        result += parseInt(binaryToConvert[index]) * Math.pow(2, binaryLength.length-1-index)
+    }
+     */
     document.getElementById("outputField").value = result;
 }
 
 // gets the reverse length of binaryToConvert variable
-function reverseLength(binaryLength){
-        var num = binaryLength.length-1;
-    for (let index = binaryLength.length-2; index > -1; index--) {
+function reverseLength(binaryLength) {
+    var num = binaryLength.length - 1;
+    for (let index = binaryLength.length - 2; index >= 0; index--) {
         let n = index.toString();
         num += n
         reverseNumber = num
